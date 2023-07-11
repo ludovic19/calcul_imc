@@ -1,0 +1,3 @@
+- methode clamp en css
+- ::outline
+-blur du box shadow

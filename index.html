@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcul IMC</title>
+    <!-- liens -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- je crée mon  container (div.container)-->
+    <div class="container">
+      <h1>Calcul <span>de votre IMC</span></h1>
+      <form>
+        <!-- attribut action pour le back et traitment des donées -->
+
+        <!-- je  crée unncontainer que je rends flexible pour le responsive des champs du formulaire -->
+        <div class="inputs-container">
+          <!-- une div pour chaque groupe d'input -->
+          <div class="input-group">
+            <label for="height">Votre taille en cm</label>
+            <input
+              type="number"
+              placeholder="votre taille en centimètres"
+              id="height"
+              class="height-input"
+            />
+          </div>
+
+          <!-- une div pour chaque groupe d'input -->
+          <div class="input-group">
+            <label for="weight">Votre poids en kg</label>
+            <input
+              type="number"
+              placeholder="votre poids en kg"
+              id="weight"
+              class="weight-input"
+            />
+          </div>
+        </div>
+
+        <button>Calculer un IMC</button>
+      </form>
+
+      <div class="info">
+        <p class="bmi-value">0</p>
+        <!-- bmi = imc en anglais pour pratique des classes en anglais-->
+        <p class="result">En attente du résultat</p>
+      </div>
+    </div>
+
+    <!-- .type number accepte lettre e
+     .(bonne pratique accessibilité: en donnant un id = for on peut cliker sur le label et focus sur l'input pour etre rempli 
+-->
+
+    <script src="app.js"></script>
+  </body>
+</html>
